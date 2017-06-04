@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:panel="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skyblue"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="4dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="4dp"
+    tools:context=".activity.TemperatureActivity">
+
+    <com.zh.physiology.PanelView.TemperaturePanelView
+        android:id="@+id/panView_temperature"
+        panel:Unit=" ℃"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:text="当前温度"/>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:ems="10"
+                android:id="@+id/temp_edtitext"
+                android:layout_weight="1"
+                android:hint="例：2017-4-1"
+                android:gravity="center"/>
+
+        <Button
+                android:text="查询"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/search_button"
+                android:layout_weight="1"
+                android:onClick="onSearchClick"/>
+    </LinearLayout>
+
+    <FrameLayout
+         android:id="@+id/temperature_container"
+         android:layout_width="match_parent"
+         android:layout_height="234dp"
+         tools:context=".activity.TemperatureActivity"
+         tools:ignore="MergeRootFrame" />
+
+</LinearLayout>

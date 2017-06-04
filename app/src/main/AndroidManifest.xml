@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.zh.physiology">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".assist.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="生理监控">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.TemperatureActivity"
+            android:label="体温"/>
+        <activity
+            android:name=".activity.BloodPressActivity"
+            android:label="血压"/>
+        <activity
+            android:name=".activity.HeartRateActivity"
+            android:label="心率"/>
+        <activity
+            android:name=".activity.HeartSoundActivity"
+            android:label="心音"/>
+        <activity
+            android:name=".activity.HealthIndexActivity"
+            android:label="健康指数"/>
+    </application>
+
+</manifest>

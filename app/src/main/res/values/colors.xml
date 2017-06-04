@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="GREEN">#17e02e</color>
+    <color name="RED">#e7251a</color>
+    <color name="PointerColor">#C9DEEE</color>
+    <color name="Yellow">#ffbc02</color>
+
+    <color name="series_not_end">#fffec500</color>
+    <color name="sienna">#ffa0522d</color>
+    <color name="silver">#ffc0c0c0</color>
+    <color name="skyblue">#ff87ceeb</color>
+    <color name="slateblue">#ff6a5acd</color>
+    <color name="slategray">#ff708090</color>
+    <color name="slategrey">#ff708090</color>
+    <color name="orange">#EE7700</color>
+
+    <color name="cardio_color1">#0bf5fc</color>
+    <color name="cardio_color2">#5396c1</color>
+    <color name="cardio_color3">#be6b03</color>
+    <color name="cardio_bg_color">#edf2f6</color>
+    <color name="black">#000000</color>
+</resources>

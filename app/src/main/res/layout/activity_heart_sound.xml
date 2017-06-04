@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skyblue"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="4dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="4dp"
+    tools:context=".activity.HeartSoundActivity">
+
+    <FrameLayout
+        android:id="@+id/heart_sound_container"
+        android:layout_width="match_parent"
+        android:layout_height="234dp"
+        tools:context=".activity.HeartSoundActivity"
+        tools:ignore="MergeRootFrame" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始"
+        android:id="@+id/start_button"
+        android:layout_centerHorizontal="true"
+        android:onClick="startDrawLine"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="暂停"
+        android:id="@+id/stop_button"
+        android:layout_centerHorizontal="true"
+        android:onClick="stopDrawLine"/>
+</LinearLayout>
